@@ -1,8 +1,9 @@
 // src/app/log-workout/page.jsx
 "use client";
 
-import WorkoutLogForm from '@/components/WorkoutLogForm';
-
+import WorkoutLogForm from '@/app/components/WorkoutLogForm';
+import { supabase } from '@/lib/supabaseClient';
+import Header from '@/app/components/Header';
 export default function LogWorkoutPage() {
   return (
     <div className="space-y-8">

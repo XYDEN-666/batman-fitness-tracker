@@ -3,12 +3,11 @@
 
 import { useState, useEffect, useCallback } from 'react';
 import { supabase } from '@/lib/supabaseClient';
-
-import CalendarWidget from '@/components/dashboard/CalendarWidget';
-import WeeklySummary from '@/components/dashboard/WeeklySummary';
-import WorkoutList from '@/components/dashboard/WorkoutList';
-import PersonalRecords from '@/components/dashboard/PersonalRecords';
-import ExerciseProgressChart from '@/components/dashboard/ExerciseProgressChart';
+import CalendarWidget from '@/app/components/dashboard/CalendarWidget';
+import WeeklySummary from '@/app/components/dashboard/WeeklySummary';
+import WorkoutList from '@/app/components/dashboard/WorkoutList';
+import PersonalRecords from '@/app/components/dashboard/PersonalRecords';
+import ExerciseProgressChart from '@/app/components/dashboard/ExerciseProgressChart';
 
 const formatDateForSupabase = (date) => {
   return date.toISOString().split('T')[0];
